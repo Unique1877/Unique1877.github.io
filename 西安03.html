@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{font-family: "微软雅黑"; background-color: #753b35;}
+        ul{list-style: none;} 
+        header{background: #753b35;}
+        .top{height: 30px; line-height: 30px;background: #753b35;border-bottom: 1px solid #303841;}
+        .box{width: 1170px;margin: auto; color: #303841;}
+        .welcome{float: left;color: #303841;}
+        .topnav{float: right;}  .topnav li{float: left;}
+        .topnav li a{
+            display: block;
+            padding: 0 10px;
+            text-decoration: none;
+            &:hover{color:#5a7860;}}
+        /* .topnav li a:hover{ color:#5a7860;} */
+        /* logo部分 */
+        .logo{padding: 5px 0;} 
+        .logo::after{content:""; display: block;clear: both;} .logo{float: left; width: 500px;}
+        img{width:67px;float: left;margin-right:10px;}
+        .search{float: right;
+            margin-top: 26px;
+            border-style: outset;}
+        .search input.input_submit{border: 0; line-height: 36px;
+            font-size:25px;width: 100px;
+            cursor: pointer;letter-spacing: 10px;
+            border-style: outset;}
+        /* 导航栏 */
+        nav{ width: 100%;/*自适应宽度*/
+            height: 50px;
+            background: #f2ebd9b6;
+            position: relative;
+            top :90px;
+        }
+        nav ul{
+            list-style: none;
+            width: 1170px;
+            margin:0 auto}
+        nav ul li{float:left;}   /*让导航里的字横过来*/
+        nav ul li a {
+            text-decoration: none;
+            display: block;
+            padding: 0 48px;
+            color:#fff;
+            line-height: 50px;font-size: 26px;font-weight: 500;
+        }
+        a:hover{ color:#5a7860;}
+        .bottom{width: 100%;height: 490px;
+        position: relative;display: inline-block;
+        /* background-color: #aee2f5; */
+        bottom: -80px;}
+        .bottom img{width: 1400px;
+            opacity: 0.7;/* 不透明度 */} 
+        .shipin{width:1170px;height: 450px;
+            margin: auto;/*居中*/
+            /* background-color: #5a7860; */
+            position: relative; bottom: -100px; }
+        .shipin video{width: 600px;
+            position: relative;   
+            top:-290px;    left: 20px;
+            display: inline-block;}
+        .shipin01{width: 1170px;height: 320px;
+        position: relative;  top: 100px;
+        background-color: #cca663;
+        opacity: 0.7;/* 不透明度 */
+       }
+       .shipin02{
+        width: 450px;
+        display: inline-block;
+        position: relative; top: -320px; right: -50px;
+        color: #303841; font-size: 23px;}
+        
+        .yun{width: 210px; height: 150px; 
+            margin: auto;
+        position: relative; bottom: -80px;}
+        .yun img{ position: relative;right: -20px;
+            width:200px }
+        .yun p{font-size: 32px; color: #303841;
+        position:relative;
+        top:-90px; left:40px;
+        margin:10px auto;}
+        .bigbox{
+            display: inline-block;
+            position: relative; bottom: -60px;
+            width: 1400px; height:1290px;
+        }
+        .bigbox1{width: 550px; height: 580px; background-color:#753b35;
+        border-right: #303841 3px dashed;
+        position: relative; display: inline-block;
+        top:20px; right: -120px;
+        }
+        .bigbox1 img{margin: auto; width: 200px;
+        position: relative;left: 180px;}
+        .bigbox11{
+        background-color: #cca663;  border-radius: 90px;
+        opacity: 0.5;/* 不透明度 */
+          width: 550px;height: 80px;
+        position: relative;bottom:-210px;}
+        .bigbox11 p{text-align: center;
+        position: relative;    left: -60px;}
+        
+        .bigbox12{display: inline-block; position: relative;
+        /* border: solid black; */
+        width: 540px;height:280px;
+        bottom: -70px; }
+        .bigbox12 img{float: left;}
+        .bigbox13{display: inline-block;
+            position: relative;
+            left:-150px;}
+        .bigbox14{display: inline-block;
+            position: relative;   left:-70px;}
+        
+        .bigbox2{width: 550px; height: 580px;
+            border-left: #303841 3px dashed;
+         background-color:#753b35;
+        position: relative;
+        right:-730px; top:-560px;
+        }
+        .bigbox2 img{margin: auto; width: 200px;
+            position: relative;right:-160px;
+        }
+        .bigbox21{
+            background-color: #cca663;  border-radius: 90px;
+            opacity: 0.5;/* 不透明度 */
+            position: relative;bottom:-210px;
+            width: 550px;height: 80px;}
+        .bigbox21 p{text-align: center;
+        position: relative;    left: -60px;}
+        .bigbox22{display: inline-block; position: relative;
+        /* border: solid black; */
+        width: 540px;height:280px;
+        bottom: -85px; }
+        .bigbox22 img{float: left;}
+        .bigbox23{display: inline-block;
+            position: relative;
+            left:-130px;}
+        .bigbox24{display: inline-block;
+            position: relative;   left:-60px;
+            height:280px}
+
+
+        .bigbox3{width: 550px; height: 580px; background-color:#753b35;
+            border-right: #303841 3px dashed;
+        position: relative; display: inline-block;
+        top:-470px; right: -120px;
+        }
+        .bigbox3 img{margin: auto; width: 200px;
+        position: relative;left: 180px;}
+        .bigbox31{
+            background-color: #cca663;  border-radius: 90px;
+        opacity: 0.5;/* 不透明度 */
+            width: 550px;height: 80px;
+        position: relative;bottom:-210px;}
+        .bigbox31 p{text-align: center;
+        position: relative;    left: -60px;}
+        
+        .bigbox32{display: inline-block; position: relative;
+        width: 540px;height:280px;
+        bottom: -100px; }
+        .bigbox32 img{float: left;}
+        .bigbox33{display: inline-block;
+            position: relative;
+            left:-150px;}
+        .bigbox34{display: inline-block;
+            position: relative;   left:-70px;}
+        .bigbox4{position: relative;
+        width: 600px; 
+        float: right; left: -50px;  top: -450px;}
+    </style>        
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="box">
+                <div class="welcome">欢迎访问我的网页</div>
+                <div class="topnav">
+                    <ul>
+                        <li><a href="#" style="color: #303841;">手机版</a></li>
+                        <li><a href="#" style="color: #303841;">为我打call</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="logo">
+                <img src="../期末/今日来西安，感受古城的文化魅力和美食👍_1_一把刷子_来自小红书网页版.jpg" alt="">
+                <h2 style="font-size: 24px;color: #283149;margin-top: 15px;">千年古都，常来长安</h2>
+                <p style="margin-top: 4px;color: #283149;">一起来looklook</p>
+            </div>
+            <div class="search">
+                <input type="submit" value="喜欢就戳我" style="background-color:#753b35;font-size: 20px;">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../期末/西安02.html">首页</a></li>
+            <li><a href="../期末/西安03.html">美景</a></li>
+            <li><a href="../期末/西安04.html">美食</a></li>
+            <li><a href="../期末/西安05.html" target="_blank">SNOW</a></li>
+            <li><a href="../期末/西安06.html" target="_blank">留言</a></li>
+        </ul>
+    </nav>
+    <div class="bottom">
+        <img src="../期末/千年古都2.png" alt="" >
+    </div>
+    <div class="shipin">
+        <div class="shipin01">
+         </div>
+        <video controls> <source src="../期末/各个风景介绍.MP4" type="video/mp4">shipin</video>
+        <div class="shipin02">
+            <p>西安是首批中国优秀旅游城市，文化遗存具有资源密度大、保存好、级别高的特点，
+            西安境内有两项六处遗产被列入《世界遗产名录》，分别是：秦始皇陵兵马俑、大雁塔、小雁塔、
+            唐长安城大明宫遗址、汉长安城未央宫遗址、兴教寺塔。</p>
+        </div>
+    </div>
+    <div class="yun">
+        <img src="../期末/云朵磨砂玻璃图标.png" alt="" width="600px">
+        <p><strong>风景<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名胜</strong></p>
+    </div>
+    <div class="bigbox">
+        <div class="bigbox1">
+            <img src="../期末/兵马俑墨渍图标.jpg" alt="">
+            <div class="bigbox11">
+                <p>“秦俑虽无名，但千人千面，他们以血肉之躯安天下，护万里河山。岂曰无名吗，河山即名。”——国家宝藏。</p>
+            </div>
+            <div class="bigbox12">
+                <div class="bigbox13"><img src="../期末/兵马俑01.jpg" alt=""></div>
+                <div class="bigbox14"><img src="../期末/兵马俑02.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="bigbox2">
+            <img src="../期末/大雁塔墨渍图标.jpg" alt="">
+            <div class="bigbox21">
+                <p>大雁塔被视为古都西安的象征。大雁塔是8世纪为保存玄奘法师由天竺经丝绸之路带回长安的经卷佛像而建。</p>
+            </div>
+            <div class="bigbox22">
+                <div class="bigbox23"><img src="../期末/大雁塔01.jpg" alt="" height="280px"></div>
+                <div class="bigbox24"><img src="../期末/大雁塔02.jpg" alt="" height="280px"></div>
+            </div>
+        </div>
+        <div class="bigbox3">
+            <img src="../期末/钟楼墨渍图标.jpg" alt="">
+            <div class="bigbox31">
+                <p>西安钟楼：全国重点文物保护单位
+                    西安钟楼是西安的象征，是中国古代遗留下来众多钟楼中形制最大、保存最完整的一座。</p>
+            </div>
+            <div class="bigbox32">
+                <div class="bigbox33"><img src="../期末/钟楼01.jpg" alt="" height="280px"> </div>
+                <div class="bigbox34"><img src="../期末/钟楼02.jpg" alt="" height="280px"></div>
+            </div>
+        </div>
+        <img class="bigbox4" src="../期末/美景图.jpg" alt="">
+    </div>
+
+</body>
+</html>

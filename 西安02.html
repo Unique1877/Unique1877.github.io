@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{font-family: "微软雅黑"; background-color: #753b35;}
+        ul{list-style: none;} 
+        header{background: #753b35;}
+        .top{height: 30px; line-height: 30px;background: #753b35;border-bottom: 1px solid #303841;}
+        .box{width: 1170px;margin: auto; color: #303841;}
+        .welcome{float: left;color: #303841;}
+        .topnav{float: right;}  .topnav li{float: left;}
+        .topnav li a{
+            display: block;
+            padding: 0 10px;
+            text-decoration: none;
+            &:hover{color:#5a7860;}}
+        /* .topnav li a:hover{ color:#5a7860;} */
+        /* logo部分 */
+        .logo{padding: 5px 0;} 
+        .logo::after{content:""; display: block;clear: both;} .logo{float: left; width: 500px;}
+        img{width:67px;float: left;margin-right:10px;}
+        .search{float: right;margin-top: 26px; border-style: outset;}
+        .search input.input_submit{border: 0;line-height: 36px;
+            font-size:25px;width: 100px;cursor: pointer;letter-spacing: 10px;}
+        /* 导航栏 */
+        nav{ width: 100%;/*自适应宽度*/
+            height: 50px;
+            background: #f2ebd9b6;
+            position: relative;
+            top :90px;
+        }
+        nav ul{
+            list-style: none;
+            width: 1170px;
+            margin:0 auto}
+        nav ul li{float:left;}   /*让导航里的字横过来*/
+        nav ul li a {
+            text-decoration: none;
+            display: block;
+            padding: 0 48px;
+            color:#fff;
+            line-height: 50px;font-size: 26px;font-weight: 500;
+        }
+        a:hover{ color:#5a7860;}        
+        .bottom{width: 100%;height: 490px;
+        position: relative;display: inline-block;
+        /* background-color: #aee2f5; */
+        bottom: -80px;}
+        .bottom img{width: 1400px;
+            opacity: 0.7; }
+
+        /* 简介 */
+         .one{ width:1170px;height: 350px; margin: auto;/*居中*/  border-bottom-style:dashed;
+         position: relative;top: 90px;}
+         /* .two{display: inline-block; width: 400px;height: 900px;} */
+        .zuo{ border-radius: 50px;float:left; 
+            width: 430px; height: auto;
+        border: solid 1px;
+        padding: 6px;margin-right: 40px; }
+        .one h2{margin: 20px 0;position: relative;left:30px;}
+        .one p{ color: #cca663; font-size: 19px;text-indent: 2em;}
+        /* 波浪线 */
+        .xuxian{
+            width:1170px;height: 370px;
+            margin: auto;
+            /* background-color: #5a7860; */
+            position: relative; bottom: -115px;
+        }
+        .xuxian img{
+            margin: auto;
+            width:1170px;height:300px;
+        position: relative;}
+        .yuantu{display: inline-block;
+        position: relative; 
+        }
+        .yuantu p a{text-decoration: none;
+            display: block;
+            color:#303841;
+            &:hover{color:#5a7860;}}
+        .yuan1{display: inline-block;
+            position: relative; 
+            top: -200px;
+        }
+        .yuan1 p{font-size: 20px;}
+        .yuan2{display: inline-block;
+            position: relative; 
+            top: -200px;right: -200px;}
+        .yuan2 p{font-size: 20px;}
+        .yuan3{display: inline-block;
+            position: relative; 
+            top: -200px;right: -400px;}
+        .yuan3 p{font-size: 20px;}
+        footer{padding-top: 30px;
+        margin-top: 20px;}
+        /* 网页底部样式 */
+        footer{padding-top: 50px;margin-top:100px;border-top: solid 2px #303841;}
+        footer ul{display: inline-block; width: 470px; height: 40px;
+            margin:0 auto;
+        position: relative ;left: 570px;}
+        footer ul li{ width: 110px; float: left; text-align: center;  border-right: 2px solid #d8d8d8;} 
+        footer li:last-child{border-right: none;}
+        footer ul li a{display: block;
+             text-decoration: none; 
+             color: #303841;}
+        footer ul li a:hover{color:#5a7860;}
+        .banquan{ text-align: center; line-height: 30px;color:#303841 ;padding-bottom: 30px;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="box">
+                <div class="welcome">欢迎访问我的网页</div>
+                <div class="topnav">
+                    <ul>
+                        <li><a href="#" style="color: #303841;">手机版</a></li>
+                        <li><a href="#" style="color: #303841;">为我打call</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="logo">
+                <img src="../期末/今日来西安，感受古城的文化魅力和美食👍_1_一把刷子_来自小红书网页版.jpg" alt="">
+                <h2 style="font-size: 24px;color: #283149;margin-top: 15px;">千年古都，常来长安</h2>
+                <p style="margin-top: 4px;color: #283149;">一起来looklook</p>
+            </div>
+            <div class="search">
+                <input type="submit" value="喜欢就戳我" style="background-color: #753b35; font-size: 20px;">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../期末/西安02.html">首页</a></li>
+            <li><a href="../期末/西安03.html">美景</a></li>
+            <li><a href="../期末/西安04.html">美食</a></li>
+            <li><a href="../期末/西安05.html" target="_blank">SNOW</a></li>
+            <li><a href="../期末/西安06.html" target="_blank">留言</a></li>
+        </ul>
+    </nav>
+    <div class="bottom">
+        <img src="../期末/千年古都1.png" alt="" >
+    </div>
+
+    <div class="one">
+        <h2>简介</h2>
+        <div class="two">
+            <img class="zuo" src="../期末/首页.jpg"  alt="">
+        </div>
+        <p >西安市，古称长安、镐京，陕西省辖地级市，是陕西省省会,国务院批复确定的中国西部地区重要的中心城市,
+        国家重要的科研、教育和工业基地。西安是联合国教科文组织于1981年确定的<strong>“世界历史名城”</strong>，是中华文明和
+        中华民族重要发祥地之一，丝绸之路的起点 ，历史上先后有13个王朝在此建都。西安是闻名世界的历史名城，
+        与世界著名的罗马、雅典、开罗等古城齐名，也是中国六大古都中建都历史最长的一个。西安市是中国最佳旅游目的地、
+        中国国际形象最佳城市之一 ，有两项六处遗产被列入《世界遗产名录》，分别是：秦始皇陵及兵马俑、大雁塔、小雁塔、
+        唐长安城大明宫遗址、汉长安城未央宫遗址、兴教寺塔 。另有西安城墙、钟鼓楼、华清池、终南山、大唐芙蓉园、
+        陕西历史博物馆、碑林等景点。西安市拥有西安交通大学、西北工业大学、西安电子科技大学等7所“双一流”建设高校</p>
+    </div>
+    <div class="xuxian">
+        <img src="../期末/虚线.jpg" alt="" >
+        <div class="yuantu">
+            <div class="yuan1">
+                <img  src="../期末/虚-1.webp" alt="" style="border-radius: 50%;width:180px;height: 180px;">
+                <p><a href="../期末/西安03.html">&nbsp;&nbsp;秦始皇兵马俑</a></p>
+            </div>
+            <div class="yuan2">
+                <img  src="../期末/02.webp" alt="" style="border-radius: 50%;width:180px;height: 180px;">
+                <p><a href="../期末/西安03.html">&nbsp;&nbsp;大小雁塔</a></p>
+            </div>
+            <div class="yuan3">
+                <img  src="../期末/虚-03.webp" alt="" style="border-radius: 50%;width:180px;height: 180px;">
+                <p><a href="../期末/西安03.html">&nbsp;&nbsp;钟楼</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- 网页底部 -->
+    <footer>
+        <ul>
+            <li><a href="http://www.xa.gov.cn/xw/" target="_blank">西安新闻</a></li>
+            <li><a href="http://www.xa.gov.cn/hd/" target="_blank">一起互动</a></li>
+        
+        </ul>
+        <div class="banquan">
+            <p>2023-2024 我自己的网站 版权所有</p>
+            <p>声明：没有抄袭，没cope别人写好的代码，布局myself。</p>
+        </div>
+    </footer>
+</body>
+</html>
